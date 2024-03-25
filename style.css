@@ -1,0 +1,808 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  background-image: linear-gradient(to right, #3f4045, #38393e, #313237, #2b2c31, #24252a, #212227, #1e1f24, #1b1c21, #1b1c21, #1b1c21, #1b1c21, #1b1c21);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #f1f1f1;
+  text-shadow: 11px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #a3a6b7;
+}
+
+/* HEADER CSS */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  z-index: 1;
+  background-image: linear-gradient(to right, #3f4045, #38393e, #313237, #2b2c31, #24252a, #212227, #1e1f24, #1b1c21, #1b1c21, #1b1c21, #1b1c21, #1b1c21);
+}
+
+.navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+  list-style: none;
+}
+
+.nav-item a {
+  color: #a3a6b7;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #f1f1f1;
+}
+
+/* MAIN CSS */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container {
+  flex-direction: column;
+}
+
+/* MAIN CSS - HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* MAIN CSS - ABOUT SECTION */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5rem;
+  width: 100%;
+  height: 95vh;
+}
+
+.about .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .description .subtitle {
+  width: 53.75rem;
+  text-align: justify;
+}
+
+.about .features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .features .profile {
+  width: 28rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about .features img {
+  width: 180px;
+  height: 265px;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about .skills-container {
+  width: 53.75rem;
+  color: #a3a6b7;
+}
+
+.about .skills-container .title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.about .skill-item {
+  display: flex;
+  gap: 5px;
+  width: 410px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about .skill-item .skill-bar {
+  height: 10px;
+  width: 410px;
+  background-color: #434343;
+  border-radius: 1rem;
+  box-shadow: 6px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 4px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about .skill-bar .skill-bar-filled {
+  height: 10px;
+  background-color: #a3a6b7;
+  border-radius: 1rem;
+}
+
+.about .ui .skill-bar-filled {
+  width: 205px;
+}
+
+.about .ux .skill-bar-filled {
+  width: 164px;
+}
+
+.about .html-css .skill-bar-filled {
+  width: 369px;
+}
+
+.about .javascript .skill-bar-filled {
+  width: 287px;
+}
+
+.about .php .skill-bar-filled {
+  width: 369px;
+}
+
+.about .python .skill-bar-filled {
+  width: 246px;
+}
+
+.about .mysql .skill-bar-filled {
+  width: 328px;
+}
+
+/* MAIN CSS - PROJECTS SECTION */
+.projects {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.projects h3 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects .project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+
+.projects .title a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.projects .title a:hover {
+  color: #a3a6b7;
+}
+
+.projects .even {
+  flex-direction: row-reverse;
+}
+
+.projects .even .caption {
+  text-align: end;
+}
+
+.projects .project-container img {
+  width: 700px;
+  height: 437px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* MAIN CSS - CONTACT SECTION */
+.contact {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.contact .contact-me .subtitle {
+  padding-bottom: 0.5rem;
+}
+
+/* FOOTER CSS */
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background-image: linear-gradient(to right, #3f4045, #38393e, #313237, #2b2c31, #24252a, #212227, #1e1f24, #1b1c21, #1b1c21, #1b1c21, #1b1c21, #1b1c21);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+/* Responsive Brakpoint */
+
+/* < 1440px breakpoint */
+@media (max-width: 1440px) {
+  .container {
+    width: 1024px;
+  }
+
+  .title {
+    font-size: 3.9rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .about .description .subtitle {
+    width: 40rem;
+  }
+
+  .about .features .profile {
+    width: 18rem;
+  }
+
+  .about .features img {
+    width: 155px;
+    height: 230px;
+  }
+
+  .about .skills-container {
+    width: 40rem;
+  }
+
+  .about .skills-container .title {
+    font-size: 1.5rem;
+  }
+
+  .about .skill-item {
+    width: 300px;
+  }
+
+  .about .skill-item .skill-bar {
+    height: 8px;
+    width: 300px;
+  }
+
+  .about .skill-bar .skill-bar-filled {
+    height: 8px;
+  }
+
+  .about .ui .skill-bar-filled {
+    width: 150px;
+  }
+
+  .about .ux .skill-bar-filled {
+    width: 120px;
+  }
+
+  .about .html-css .skill-bar-filled {
+    width: 270px;
+  }
+
+  .about .javascript .skill-bar-filled {
+    width: 210px;
+  }
+
+  .about .php .skill-bar-filled {
+    width: 270px;
+  }
+
+  .about .python .skill-bar-filled {
+    width: 180px;
+  }
+
+  .about .mysql .skill-bar-filled {
+    width: 240px;
+  }
+
+  .projects h3 {
+    font-size: 2.5rem;
+  }
+
+  .projects .project-container img {
+    width: 500px;
+    height: 312px;
+  }
+
+  .projects .odd .caption {
+    padding-right: 2rem;
+  }
+
+  .projects .even .caption {
+    padding-left: 2rem;
+  }
+}
+
+/* < 1204px breakpoint */
+@media (max-width: 1204px) {
+  .container {
+    width: 768px;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .about .description .subtitle {
+    width: 30rem;
+  }
+
+  .about .features .profile {
+    width: 16rem;
+  }
+
+  .about .features img {
+    width: 140px;
+    height: 200px;
+    border-radius: 0.5rem;
+  }
+
+  .about .skills-container {
+    width: 30rem;
+  }
+
+  .about .skills-container .title {
+    font-size: 1.3rem;
+  }
+
+  .about .skill-item p {
+    font-size: 0.75rem;
+  }
+
+  .about .skill-item {
+    width: 220px;
+  }
+
+  .about .skill-item .skill-bar {
+    height: 7px;
+    width: 220px;
+  }
+
+  .about .skill-bar .skill-bar-filled {
+    height: 7px;
+  }
+
+  .about .ui .skill-bar-filled {
+    width: 110px;
+  }
+
+  .about .ux .skill-bar-filled {
+    width: 88px;
+  }
+
+  .about .html-css .skill-bar-filled {
+    width: 198px;
+  }
+
+  .about .javascript .skill-bar-filled {
+    width: 154px;
+  }
+
+  .about .php .skill-bar-filled {
+    width: 198px;
+  }
+
+  .about .python .skill-bar-filled {
+    width: 132px;
+  }
+
+  .about .mysql .skill-bar-filled {
+    width: 176px;
+  }
+
+  .projects h3 {
+    font-size: 2rem;
+  }
+
+  .projects .project-container img {
+    width: 400px;
+    height: 249px;
+  }
+
+  .projects .odd .caption {
+    padding-right: 2rem;
+  }
+
+  .projects .even .caption {
+    padding-left: 2rem;
+  }
+}
+
+/* < 768px breakpoint */
+@media (max-width: 768px) {
+  .container {
+    width: 576px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .about {
+    gap: 1.5rem;
+  }
+
+  .about .description {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .about .description .subtitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .features .profile {
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+
+  .about .features img {
+    width: 105px;
+    height: 150px;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+  }
+
+  .about .skills-container {
+    width: 30rem;
+  }
+
+  .about .skills-container .title {
+    font-size: 1.3rem;
+  }
+
+  .about .skill-item p {
+    font-size: 0.65rem;
+  }
+
+  .about .skill-item {
+    width: 198px;
+  }
+
+  .about .skill-item .skill-bar {
+    height: 5px;
+    width: 198px;
+  }
+
+  .about .skill-bar .skill-bar-filled {
+    height: 5px;
+  }
+
+  .about .ui .skill-bar-filled {
+    width: 99px;
+  }
+
+  .about .ux .skill-bar-filled {
+    width: 79.2px;
+  }
+
+  .about .html-css .skill-bar-filled {
+    width: 178.2px;
+  }
+
+  .about .javascript .skill-bar-filled {
+    width: 138.6px;
+  }
+
+  .about .php .skill-bar-filled {
+    width: 178.2px;
+  }
+
+  .about .python .skill-bar-filled {
+    width: 118.8px;
+  }
+
+  .about .mysql .skill-bar-filled {
+    width: 158.4px;
+  }
+
+  .projects h3 {
+    font-size: 1.6rem;
+  }
+
+  .projects .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .projects .project-container .caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .projects .caption .subtitle {
+    text-align: center;
+  }
+
+  .projects .project-container img {
+    width: 400px;
+    height: 249px;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact .contact-me .subtitle {
+    padding-bottom: 0.3rem;
+  }
+}
+
+/* < 576px breakpoint */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .navlist {
+    gap: 2rem;
+  }
+
+  .about {
+    gap: 1rem;
+  }
+
+  .about .description {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .about .description .subtitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .features .profile {
+    width: auto;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .about .features img {
+    width: 90px;
+    height: 130px;
+    border-radius: 0.4rem;
+    margin-top: 0;
+  }
+
+  .about .skills-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .about .skills-container .title {
+    font-size: 1.3rem;
+  }
+
+  .about .skill-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about .skill-list .ui {
+    order: 1;
+  }
+
+  .about .skill-list .ux {
+    order: 2;
+  }
+
+  .about .skill-list .html-css {
+    order: 3;
+  }
+
+  .about .skill-list .javascript {
+    order: 4;
+  }
+
+  .about .skill-list .php {
+    order: 5;
+  }
+
+  .about .skill-list .python {
+    order: 6;
+  }
+
+  .about .skill-list .mysql {
+    order: 7;
+  }
+
+  .about .skill-item p {
+    font-size: 0.65rem;
+  }
+
+  .about .skill-item {
+    width: 100%;
+  }
+
+  .about .skill-item .skill-bar {
+    height: 5px;
+    width: 100%;
+  }
+
+  .about .skill-bar .skill-bar-filled {
+    height: 5px;
+  }
+
+  .about .ui .skill-bar-filled {
+    width: 50%;
+  }
+
+  .about .ux .skill-bar-filled {
+    width: 40%;
+  }
+
+  .about .html-css .skill-bar-filled {
+    width: 90%;
+  }
+
+  .about .javascript .skill-bar-filled {
+    width: 70%;
+  }
+
+  .about .php .skill-bar-filled {
+    width: 90%;
+  }
+
+  .about .python .skill-bar-filled {
+    width: 60%;
+  }
+
+  .about .mysql .skill-bar-filled {
+    width: 80%;
+  }
+
+  .projects h2 {
+    margin-bottom: 2rem;
+  }
+
+  .projects h3 {
+    font-size: 1.2rem;
+  }
+
+  .projects .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .projects .project-container .caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .projects .caption .subtitle {
+    text-align: center;
+  }
+
+  .projects .project-container img {
+    width: 100%;
+    height: 10%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .contact {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact .contact-me .subtitle {
+    padding-bottom: 0.3rem;
+  }
+}
