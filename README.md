@@ -1,1 +1,1 @@
-Simple portfolio web made with html and css.
+Simple portfolio made with html and css.
